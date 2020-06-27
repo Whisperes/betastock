@@ -1,58 +1,30 @@
-@font-face {
-  font-family: "AvenirNorm";
-  src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: "AvenirMed";
-  src: url("../fonts/AvenirNextCyr-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: "AvenirLigIt";
-  src: url("../fonts/AvenirNextCyr-LightItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: "AvenirBol";
-  src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: "AvenirDem";
-  src: url("../fonts/AvenirNextCyr-Demi.woff") format("woff"); }
-
 .col {
   padding: 0; }
 
 .row {
   margin: 0; }
 
-.demi-text {
-  font-family: "AvenirDem"; }
+.demi-text { }
 
-.medium-text {
-  font-family: "AvenirDem"; }
+.medium-text { }
 
-body {
-  font-family: "AvenirNorm";
-  overflow-x: hidden; }
+body {}
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: "AvenirDem"; }
+h5 { }
 
 a {
-  text-decoration: none;
-  color: #fff; }
+  text-decoration: none; }
   a:hover, a:active {
-    text-decoration: none;
-    color: #fff; }
+    text-decoration: none;}
 
 .meta-info {
   display: none; }
 
-.light-italic {
-  font-family: "AvenirLigIt"; }
+.light-italic { }
 
 .visibility {
   display: none; }
@@ -63,14 +35,8 @@ a {
 .response-testimotinal {
   display: none; }
 
-.uk-table-striped tbody tr:nth-of-type(odd),
-.uk-table-striped > tr:nth-of-type(odd) {
-  background: #f5f5f7;
-  border: none; }
+.main-dynamic {}
 
-.main-dynamic {
-  background: url(../imgs/FinanceBG.png);
-  background-size: cover; }
   .main-dynamic .main-btn {
     background: #2C58F8;
     box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
