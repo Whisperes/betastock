@@ -96,7 +96,7 @@
      <form id="holder" class="needs-validation" onSubmit="return xyz();">
       <script type=text/javascript>
             function xyz() {
-              document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('bench').value
+              document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('benchmark').value
             }
       </script>
       <div class="mb-3">
@@ -104,8 +104,8 @@
         <input class="form-control" type="text" id="ticker" required list="tickers">
       </div>
        <div class="mb-3">
-         <label for="email">Введите тикер бенчмарка <span class="text-muted">(индекс или иная акция)</span></label>
-         <input class="form-control" type="text" id="bench" required value="IMOEX" list="benchs" >
+         <label for="benchmark">Введите тикер бенчмарка <span class="text-muted">(индекс или иная акция)</span></label>
+         <input class="form-control" type="text" id="benchmark" required value="IMOEX" list="benchs" >
 
         <datalist id="benchs">
             <option value="IMOEX">
