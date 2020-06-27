@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "AvenirNorm";
+  src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "AvenirMed";
+  src: url("../fonts/AvenirNextCyr-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "AvenirLigIt";
+  src: url("../fonts/AvenirNextCyr-LightItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "AvenirBol";
+  src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "AvenirDem";
+  src: url("../fonts/AvenirNextCyr-Demi.woff") format("woff"); }
+
+.col {
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
+.demi-text {
+  font-family: "AvenirDem"; }
+
+.medium-text {
+  font-family: "AvenirDem"; }
+
+body {
+  font-family: "AvenirNorm";
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "AvenirDem"; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover, a:active {
+    text-decoration: none;
+    color: #fff; }
+
+.meta-info {
+  display: none; }
+
+.light-italic {
+  font-family: "AvenirLigIt"; }
+
+.visibility {
+  display: none; }
+
+.visibility-inverse {
+  display: block; }
+
+.response-testimotinal {
+  display: none; }
+
+.uk-table-striped tbody tr:nth-of-type(odd),
+.uk-table-striped > tr:nth-of-type(odd) {
+  background: #f5f5f7;
+  border: none; }
+
+
+.main-fond .main-btn {
+  background: #2C58F8;
+  box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
+  color: #fff;
+  margin: 0;
+  margin-top: 35px;
+  display: block; }
+
+.main-fond .main-fond-wrapper {
+  width: 1200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  .main-fond .main-fond-wrapper .main-fond-text {
+    width: 35%;
+    display: block;
+    float: left;
+    margin-top: 90px;
+    padding-left: 35px; }
+    .main-fond .main-fond-wrapper .main-fond-text h2 {
+      color: #2C58F8; }
+  .main-fond .main-fond-wrapper .illustration-container {
+    display: block;
+    width: 60%;
+    float: right; }
