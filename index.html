@@ -99,7 +99,7 @@
 
               var params = 'options=' + encodeURIComponent(document.getElementById('benchmark').value)
 
-              xhr.open("GET", '/submit?' + params, true);
+              xhr.open("GET", 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?' + params, true);
 
               xhr.onreadystatechange = function() {
                   if (this.readyState != 4) return;
