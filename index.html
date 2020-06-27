@@ -97,7 +97,7 @@
             function xyz() {
               var xhr = new XMLHttpRequest();
 
-              xhr.open("GET", 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('benchmark').value, true);
+              xhr.open("GET", 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('benchmark').value, false);
 
               xhr.onreadystatechange = function() {
                   if (this.readyState != 4) return;
