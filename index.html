@@ -102,8 +102,11 @@
 
               xhr.open("GET", '/submit?' + params, true);
 
-              xhr.onreadystatechange = ...;
+              xhr.onreadystatechange = function() {
+                  if (this.readyState != 4) return;
 
+                  alert('Что-то пошло не так. Проверьте значения.');
+                }
               xhr.send();
               }
       </script>
