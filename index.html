@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <form onSubmit='this.form.action="somethingelse";'>
-   
+  
+  <form id="holder" onSubmit="return xyz();">
+   <script type=text/javascript>
+        function xyz() {
+          document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value
+        }
+  </script>
+    
     <div class="form-group">
       <input type="text" id="ticker" required><label for="name">Тикер</label>
     </div>
