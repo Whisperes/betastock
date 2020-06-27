@@ -96,8 +96,16 @@
      <form id="holder" class="needs-validation" onSubmit="return xyz();">
       <script type=text/javascript>
             function xyz() {
-              document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('benchmark').value
-            }
+              var xhr = new XMLHttpRequest();
+
+              var params = 'options=' + encodeURIComponent(document.getElementById('benchmark').value)
+
+              xhr.open("GET", '/submit?' + params, true);
+
+              xhr.onreadystatechange = ...;
+
+              xhr.send();
+              }
       </script>
       <div class="mb-3">
         <label for="ticker">Введите акцию</label>
