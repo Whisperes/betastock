@@ -40,7 +40,6 @@ a {
   .main-dynamic .main-btn {
     background: #2C58F8;
     box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
-    color: #fff;
     margin: 0 auto;
     margin-top: 35px;
     display: block; }
@@ -56,8 +55,7 @@ a {
       display: block;
       margin: 0 auto; }
       .main-dynamic .main-dynamic-wrapper .main-dynamic-text h2,
-      .main-dynamic .main-dynamic-wrapper .main-dynamic-text p {
-        color: #fff; }
+      .main-dynamic .main-dynamic-wrapper .main-dynamic-text p {}
     .main-dynamic .main-dynamic-wrapper .illustration-container {
       display: block;
       width: 70%;
