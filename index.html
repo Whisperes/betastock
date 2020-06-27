@@ -91,16 +91,22 @@
         <h2 class="d-flex justify-content-between align-items-center mb-3">
           <span class="text-muted">Отчет по рискам</span>
         </h2>
-          <form id="holder" class="needs-validation" onSubmit="return xyz();">
-     <script type=text/javascript>
-          function xyz() {
-            document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3DIMOEX'
-          }
-    </script>
-      <div>
+        
+        
+     <form id="holder" class="needs-validation" onSubmit="return xyz();">
+      <script type=text/javascript>
+            function xyz() {
+              document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' +  document.getElementById('bench').value
+            }
+      </script>
+      <div class="mb-3">
         <label for="ticker">Введите тикер</label>
         <input class="form-control" type="text" id="ticker" placeholder="YNDX" required>
       </div>
+       <div class="mb-3">
+          <label for="email">Введите тикер бенчмарка <span class="text-muted">(Опционально)</span></label>
+         <input class="form-control" type="text" id="bench" required>"IMOEX</input>
+       </div>
       <hr class="mb-4">
       <div class="submit-button">
           <input type="submit" class="btn btn-primary btn-lg btn-block" value="Получить отчет">
