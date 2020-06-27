@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
   
-  <form id="holder" onSubmit="return xyz();">
+<body>
+  <form id="holder" class="needs-validation" onSubmit="return xyz();">
    <script type=text/javascript>
         function xyz() {
           document.getElementById('holder').action = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3DMCFTR%26rf%3D0.0'
         }
   </script>
-    
-    <div class="form-group">
-      <input type="text" id="ticker" required><label for="name">Тикер</label>
+    <div>
+      <label for="ticker">Тикер</label>
+      <input class="form-control" type="text" id="ticker" required>
     </div>
-    <div class="submit-block">
-      <div class="submit-button">
-        <input type="submit" value="Отправить">
-      </div>
+    <div class="submit-button">
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Отправить">
     </div>
   </form>
 
