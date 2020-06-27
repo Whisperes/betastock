@@ -68,30 +68,31 @@ a {
   background: #f5f5f7;
   border: none; }
 
-
-.main-fond .main-btn {
-  background: #2C58F8;
-  box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
-  color: #fff;
-  margin: 0;
-  margin-top: 35px;
-  display: block; }
-
-.main-fond .main-fond-wrapper {
-  width: 1200px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  margin-top: 40px; }
-  .main-fond .main-fond-wrapper .main-fond-text {
-    width: 35%;
+.main-dynamic {
+  background: url(../imgs/FinanceBG.png);
+  background-size: cover; }
+  .main-dynamic .main-btn {
+    background: #2C58F8;
+    box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 35px;
+    display: block; }
+  .main-dynamic .main-dynamic-wrapper {
+    width: 1200px;
     display: block;
-    float: left;
-    margin-top: 90px;
-    padding-left: 35px; }
-    .main-fond .main-fond-wrapper .main-fond-text h2 {
-      color: #2C58F8; }
-  .main-fond .main-fond-wrapper .illustration-container {
-    display: block;
-    width: 60%;
-    float: right; }
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 60px; }
+    .main-dynamic .main-dynamic-wrapper .main-dynamic-text {
+      text-align: center;
+      width: 50%;
+      display: block;
+      margin: 0 auto; }
+      .main-dynamic .main-dynamic-wrapper .main-dynamic-text h2,
+      .main-dynamic .main-dynamic-wrapper .main-dynamic-text p {
+        color: #fff; }
+    .main-dynamic .main-dynamic-wrapper .illustration-container {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
