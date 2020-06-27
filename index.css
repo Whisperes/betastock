@@ -32,6 +32,9 @@ a {
 .visibility-inverse {
   display: block; }
 
+.illustration-container {
+  position: relative; }
+
 .response-testimotinal {
   display: none; }
 
