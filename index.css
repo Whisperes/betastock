@@ -33,33 +33,9 @@ a {
   display: block; }
 
 .illustration-container {
-  position: relative; }
+  position: relative;
+  width: 70%;
+  margin: 0 auto;}
 
 .response-testimotinal {
   display: none; }
-
-.main-dynamic {}
-
-  .main-dynamic .main-btn {
-    background: #2C58F8;
-    box-shadow: 0px 10px 15px rgba(43, 86, 242, 0.2);
-    margin: 0 auto;
-    margin-top: 35px;
-    display: block; }
-  .main-dynamic .main-dynamic-wrapper {
-    width: 1200px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    margin-top: 60px; }
-    .main-dynamic .main-dynamic-wrapper .main-dynamic-text {
-      text-align: center;
-      width: 50%;
-      display: block;
-      margin: 0 auto; }
-      .main-dynamic .main-dynamic-wrapper .main-dynamic-text h2,
-      .main-dynamic .main-dynamic-wrapper .main-dynamic-text p {}
-    .main-dynamic .main-dynamic-wrapper .illustration-container {
-      display: block;
-      width: 70%;
-      margin: 0 auto; }
