@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
 
     <script type="text/javascript">
      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -27,6 +34,7 @@
           accurateTrackBounce:true,
           webvisor:true
      });
+
 
     </script>
     <noscript>
@@ -108,28 +116,43 @@
             <form id="holder" class="needs-validation" onSubmit="return xyz();" method="get">
 
                 <div class="mb-3">
-                    <label for="ticker">Введите акцию (MOEX или Yahoo)</label>
-                    <input class="form-control" type="text" id="ticker" required list="tickers" onchange="return xyz();">
+                    <label for="ticker">Введите акцию <span class="text-muted">(MOEX или Yahoo)</span></label>
+                    <input class="form-control" type="text" id="ticker" required list="tickers"
+                           onchange="return xyz();">
                 </div>
                 <div class="mb-3">
-                    <label for="ticker">Введите бенчмарк (индекс или тикер акции)</label>
-                    <input class="form-control" type="text" id="bench"  required list="benchs" value="IMOEX" onchange="return xyz();">
+                    <label for="ticker">Введите бенчмарк <span
+                            class="text-muted">(индекс или тикер акции)</span></label>
+                    <input class="form-control" type="text" id="bench" required list="benchs" value="IMOEX"
+                           onchange="return xyz();">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Начало сравнения <span class="text-muted">(опционально)</span></label>
+                    <input type="text" data-toggle="date" class="form-control" id="startDate" value="2014-12-23"
+                           onchange="return xyz();">
                 </div>
 
                 <hr class="mb-4">
                 <div>
-                    <a class="btn btn-primary btn-lg btn-block" role="button" href="#" id="btn_report">Получить отчет</a>
+                    <a class="btn btn-primary btn-lg btn-block" role="submit" href="#" id="btn_report">Получить
+                        отчет</a>
                 </div>
                 <script type=text/javascript>
                                 function xyz() {
-                                  document.getElementById('btn_report').href = 'https://rusetfs.com/etf/report/' + document.getElementById('ticker').value + '?options=vs%3D' + document.getElementById('bench').value
+                                  document.getElementById('btn_report').href = 'https://rusetfs.com/etf/report/' +
+                                  document.getElementById('ticker').value +
+                                  '?options=vs%3D' + document.getElementById('bench').value +
+                                  '%26start=' + document.getElementById('startDate').value
                                   }
+
                 </script>
                 <datalist id="benchs">
                     <option value="IMOEX">
                     <option value="MCFTR">
                     <option value="^GSPC">
                     <option value="^SP500TR">
+                    <option value="Deposit">
+                    <option value="Inflation">
                 </datalist>
 
                 <datalist id="tickers">
@@ -389,10 +412,11 @@
             Погрузись в профессиональный технический и статистический анализ акций. Пока бесплатно, нет смс и
             отсутствует регистрация!
         </p>
-        <div >
+        <div>
             <img class="illustration-container" src="./imgs/mainDynamic.png" alt="Сравнение с бенчмарком">
         </div>
     </div>
+    <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D0%B8%D1%82%D1%8C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%D0%BC&targets-hint=&default-sum=199&button-text=14&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=&quickpay=shop&account=41001417185591" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
 </div>
 
 <footer class="footer my-5 pt-5 text-muted text-center text-small">
